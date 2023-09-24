@@ -429,18 +429,38 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.06104851, y: 0, z: 0, w: 0.99813485}
-  m_LocalPosition: {x: -0, y: 6.3, z: -16.6}
+  m_LocalRotation: {x: 0.08715578, y: 0, z: 0, w: 0.9961947}
+  m_LocalPosition: {x: 0, y: 7, z: -18.000013}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1903330171}
-  m_LocalEulerAnglesHint: {x: 7, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 10, y: 0, z: 0}
+--- !u!1 &964266295 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4213772862813563197, guid: 5d4aaab3aef15084d95c7ad508862c59, type: 3}
+  m_PrefabInstance: {fileID: 1368818240616527447}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &965497055 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3544760321595847559, guid: 5d4aaab3aef15084d95c7ad508862c59, type: 3}
   m_PrefabInstance: {fileID: 1368818240616527447}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &965497056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964266295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3e7b2fa74a23a440a26a19033dc1e25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controlSpeed: 30
+  xRange: 10
+  yRange: 7
 --- !u!1 &1763719426
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,7 +564,6 @@ GameObject:
   - component: {fileID: 1903330171}
   - component: {fileID: 1903330173}
   - component: {fileID: 1903330172}
-  - component: {fileID: 1903330174}
   m_Layer: 0
   m_Name: Player Rig
   m_TagString: Untagged
@@ -611,67 +630,6 @@ PlayableDirector:
     value: {fileID: 465440135}
   m_ExposedReferences:
     m_References: []
---- !u!114 &1903330174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1903330170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3e7b2fa74a23a440a26a19033dc1e25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movement:
-    m_Name: Movement
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 9f57dee5-366b-4dc5-9a84-8603f2ee740d
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 2D Vector
-      m_Id: ffd8e340-cba8-49dc-a306-09ecd665ae15
-      m_Path: 2DVector
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Movement
-      m_Flags: 4
-    - m_Name: up
-      m_Id: f1b89195-e1c8-4cb2-8418-5a8e5edffe2e
-      m_Path: <Keyboard>/w
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Movement
-      m_Flags: 8
-    - m_Name: down
-      m_Id: 1b81a68b-0dc3-4a07-8cc3-c348db1489e7
-      m_Path: <Keyboard>/s
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Movement
-      m_Flags: 8
-    - m_Name: left
-      m_Id: d4bd0ecc-ac91-421b-8768-458568977155
-      m_Path: <Keyboard>/a
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Movement
-      m_Flags: 8
-    - m_Name: right
-      m_Id: 1c32a2b1-9d2c-426f-b0c7-4a1a621750ce
-      m_Path: <Keyboard>/d
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Movement
-      m_Flags: 8
-    m_Flags: 0
 --- !u!1001 &1368818240616527447
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -727,7 +685,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4213772862813563197, guid: 5d4aaab3aef15084d95c7ad508862c59, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 965497056}
   m_SourcePrefab: {fileID: 100100000, guid: 5d4aaab3aef15084d95c7ad508862c59, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
